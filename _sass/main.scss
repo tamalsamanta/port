@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+
+$gold: rgb(255, 204, 0);
+
+
+
+#heroName {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+}
+
+#customCol {
+    color: $gold;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#contactMe {
+    margin-top: 15px;
+    border: 2px solid $gold;
+}
+
+#contactMe:hover, #contactMe.is-hovered {
+    background-color: $gold;
+    border-color: transparent;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.yellowLine {
+    height: 4px;
+    width: 225px;
+    border-radius: 2px;
+    transform: translateX(-5px);
+    background-color: $gold;
+    position: relative;
+    top: 27vh;
+}
+
+.parallax {
+    /* The image used */
+    // background-image: url("/images/fireBG.png");
+
+  
+    /* Set a specific height */
+    height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    width: 150%;
+    position: fixed;
+  }
+
