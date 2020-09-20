@@ -7172,3 +7172,13 @@ label.panel-block {
   background-size: cover;
   width: 150%;
   position: fixed; }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
